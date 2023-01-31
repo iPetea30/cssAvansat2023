@@ -1,0 +1,21 @@
+body{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+div{
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+    border: 5px black solid;
+    background-color: purple;
+    color: black;
+}
+div > div{
+    color: red;
+    background-color: aqua;
+}
+div > div > div{
+    color: green;
+    background-color: bisque;
+}

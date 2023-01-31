@@ -1,0 +1,26 @@
+div, section{
+    margin: 20px;
+    padding: 15px;
+    border: 2px solid red;
+}
+section{
+    font-style: italic;
+}
+section p{
+    font-style: italic;
+}
+section > article > p{
+    font-style: italic;
+}
+section > article p{
+    font-style: bold;
+}
+div p{
+    color: red;
+}
+section + p{
+    color: brown;
+} /* selectez primul p de dupa section*/
+/* section ~ p{
+    color: brown;
+}  selectez toate p-urile de dupa section*/
