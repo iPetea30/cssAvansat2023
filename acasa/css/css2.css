@@ -1,0 +1,181 @@
+body {
+    background-image: url("../img2/sun3.png"), url("../img2/skystars.jpg");
+    background-repeat: no-repeat, repeat;
+    background-position: center center, 0% 0%;
+    background-size: 60%, auto;
+    width: 100%;
+    max-width: auto;
+    height: 100vh;
+    margin: auto;
+}
+
+/* .sun{
+    height: 900px;
+    width: 900px;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 10px 5px 256px 4px rgba(204, 150, 114, 1);
+} */
+.mercury {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    display: inline-block;
+    top: 300px;
+    left: 300px;
+}
+
+.venus {
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+    display: inline-block;
+    top: 350px;
+    left: 450px;
+}
+
+.earth {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    display: inline-block;
+    top: 600px;
+    left: 1600px;
+}
+
+.moon {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: inline-block;
+    top: 450px;
+    left: 1450px;
+}
+
+.mars {
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.mercury {
+
+    position: relative;
+    /* animation: yourAnimation 5s linear 0s infinite normal none; */
+    animation-name: mercurr;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+@keyframes mercurr {
+    from {
+        transform: translateZ(10000px) translateY(100px) rotate(0deg);
+    }
+
+    to {
+        transform: translateX(1000px) rotate(0deg);
+    }
+}
+
+/* @keyframes mercurr {
+    50% {
+      transform: translate3D(1470px, -100px, 0);
+    }
+  }
+  
+  .mercur {
+    animation: mercurr 5s infinite;
+  } */
+
+.venus {
+
+    position: relative;
+    /* animation: yourAnimation 5s linear 0s infinite normal none; */
+    animation-name: venuss;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+@keyframes venuss {
+    from {
+        transform: translateY(250px) rotate(180deg);
+    }
+
+    to {
+        transform: translateX(1200px) rotate(0deg);
+    }
+}
+
+.earth {
+
+    position: relative;
+    /* animation: yourAnimation 5s linear 0s infinite normal none; */
+    animation-name: earthh;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+@keyframes earthh {
+    from {
+        transform: translateY(-400px) rotate(180deg);
+    }
+
+    to {
+        transform: translateX(-1000px) rotate(-360deg);
+    }
+}
+
+.mars {
+
+    position: relative;
+    /* animation: yourAnimation 5s linear 0s infinite normal none; */
+    animation-name: marss;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+@keyframes marss {
+    from {
+        transform: translateX(1000px) rotate(180deg);
+    }
+
+    to {
+        transform: translateY(500px) rotate(0deg);
+    }
+}
+
+.moon {
+
+    position: relative;
+    /* animation: yourAnimation 5s linear 0s infinite normal none; */
+    animation-name: moonn;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+@keyframes moonn {
+    from {
+        transform: translateY(-400px) rotate(180deg);
+    }
+
+    to {
+        transform: translateX(-1000px) rotate(0deg);
+    }
+}
+
+
