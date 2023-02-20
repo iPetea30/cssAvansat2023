@@ -65,9 +65,9 @@ const language = 'romana';
 
 
 //// operatorii de baza
-// let now = 2037;
-// const ageJonas = now - 1991;
-// const ageSarah = now - 2021;
+let now = 2037;
+const ageJonas = now - 1991;
+const ageSarah = now - 2021;
 
 // // console.log(ageJonas);
 // console.log(ageJonas, ageSarah);
@@ -116,3 +116,128 @@ const language = 'romana';
 // console.log(description1);
 
 
+///// Precedenta operatorilor
+let suma = ageJonas - ageSarah;
+console.log(suma);
+console.log(now - 1991 > now - 2021);
+
+let x, y;
+// x = y = undefined;
+
+// x = y = 25 - 10 -5;
+// // x = y = undefined y = 10;
+// // undefined 10;
+
+const averageAge = (ageJonas + ageSarah) / 2;
+console.log(ageJonas, ageSarah, averageAge);
+
+
+///// CHALLENGE #1
+
+// Mark și John încearcă să-și compare IMC (indicele de masă corporală), l-au calculat folosind formula:
+// IMC = masa / inaltime ** 2 = masa / (inaltime * inaltime) (masa in kg și înălțimea în metri).
+// Sarcinile tale:
+// 1. Stocați masa și înălțimea lui Mark și John în variabile
+// 2. Calculați ambele IMC folosind formula (le puteți chiar implementa pe ambele versiuni)
+// 3. Creați o variabilă booleană „markHigherBMI” care să conțină informații despre faptul dacă Mark are un IMC mai mare decât John.
+// Date de testare:
+
+// § Date 1: Mark cântărește 78 kg și are 1,69 m înălțime.  John cântărește 92 kg și are 1,95
+// m înaltime.
+// § Data 2: Mark cântărește 95 kg și are 1,88 m înălțime. John cântărește 85 kg și are 1,76
+// m înaltime.
+
+// Data 1
+
+// const masaMark = 78;
+// const masaJohn = 92;
+
+// const inaltimeMark = 1.69;
+// const inaltimeJohn = 1.95;
+
+// // const BMIMark = masaMark / inaltimeMark ** 2;
+// // const BMIJohn = masaJohn / inaltimeJohn ** 2;
+// const BMIMark = masaMark / (inaltimeMark ** 2);
+// const BMIJohn = masaJohn / (inaltimeJohn ** 2);
+
+// console.log(BMIMark, BMIJohn);
+
+// const markHigherBMI = BMIMark > BMIJohn;
+// console.log(markHigherBMI); // true
+
+// Data 2
+
+// let masaMark = 95;
+// let masaJohn = 85;
+
+// let inaltimeMark = 1.88;
+// let inaltimeJohn = 1.76;
+
+// // let BMIMark = masaMark / inaltimeMark ** 2;
+// // let BMIJohn = masaJohn / inaltimeJohn ** 2;
+// const BMIMark = masaMark / (inaltimeMark ** 2);
+// const BMIJohn = masaJohn / (inaltimeJohn ** 2);
+
+// console.log(BMIMark, BMIJohn);
+
+// let markHigherBMI = BMIMark > BMIJohn;
+// console.log(markHigherBMI); // false
+
+
+//// Stringuri si sabloane literale
+
+// const numelePersoanei = "Ion";
+// const job = "profesor";
+// const anulNasterii = 1991;
+// const currentYear = 2037;
+
+// // const stringNou = "Eu sunt " + numelePersoanei + ", un " + job + " care are " + (currentYear - anulNasterii) + " ani."
+// // console.log(stringNou);
+
+// const stringMaiNou = `Eu sunt ${numelePersoanei}, un ${job} care are ${currentYear - anulNasterii} ani.`;
+// console.log(stringMaiNou);
+
+// // console.log("Asta este \n\
+// // un string \n\
+// // in mai multe randuri");
+
+// console.log(`Asta este
+// un string
+// in mai multe randuri`);
+
+// console.log("Cuvant." + " " + job);
+// console.log(`Cuvant. ${job}`);
+
+// EXERCITIU
+// const description1 = `${country} is in ${continent} and its ${population} milion people speaks ${language}`;
+// console.log(description1);
+
+
+
+//// Luarea deciziilor. IF - ELSE
+
+// const age = 16;
+
+// if(age >= 18){
+//     console.log("Esti destul de in varsta pentru a conduce o masina !🚗");
+// } else {
+//     console.log(`Nu ai varsta necesara! Trebuie sa mai cresti ${18 -age} ani.`);
+// }
+
+// const birthYear = 1991;
+
+// let century;
+// if (birthYear <= 2000){
+//     century = 20;
+// } else {
+//     century = 21;
+// }
+
+// console.log(`Ai fost nascut in secolul ${century}.`);
+
+// EXERCITIU
+// if(population > 33){
+//     console.log(`Populatia din ${country} este peste medie.`);
+// } else {
+//     console.log(`Populatia din ${country} este cu ${33 - population} milioane sub medie.`);
+// }
